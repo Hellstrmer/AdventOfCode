@@ -20,9 +20,20 @@ const partOne = (input) => {
     input.forEach(d => {
         
         values.push(d.replace(/\s+/g, ' ').trim().split(' ').map(Number));
-    }); 
-    console.log(values)
-
+    });
+    //console.log(values)
+    //Från Robert 
+            // Extract numbers.
+            
+            //let data = row.match(/(\d+)/g) || [];
+            //console.log(data)
+            
+            for (const map of input) {
+                if (Number(input)>=Number(map[0]) && src<Number(Number(map[0])+Number(map[2]))) {
+                    return Number(src)+Number(map[1])-Number(map[0]);
+                }
+            }
+            console.log(input)
 
 }
 
